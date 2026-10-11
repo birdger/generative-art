@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生成艺术工坊 · 流场 / 粒子字 / 分形</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="brand">
+    <span class="dot" aria-hidden="true"></span>
+    <h1>生成艺术工坊</h1>
+    <span class="sub">p5.js · 流场 / 粒子字 / 分形</span>
+  </div>
+  <nav id="tabs" class="tabs" aria-label="作品切换"></nav>
+  <div class="seed">
+    <label for="seed-input">种子</label>
+    <input id="seed-input" type="text" spellcheck="false" autocomplete="off">
+    <button id="btn-seed" class="ghost" title="换一个种子（快捷键 N）">随机</button>
+  </div>
+</header>
+
+<main>
+  <section class="stage">
+    <div id="host"></div>
+    <p id="blurb" class="blurb"></p>
+  </section>
+
+  <aside class="panel">
+    <h2>参数</h2>
+    <div id="controls" class="controls"></div>
+    <div class="actions">
+      <button id="btn-pause" class="solid">暂停</button>
+      <button id="btn-reset" class="ghost">重播</button>
+      <button id="btn-in" class="ghost">放大</button>
+      <button id="btn-out" class="ghost">缩小</button>
+      <button id="btn-save" class="ghost">存 PNG</button>
+    </div>
+    <p id="stats" class="stats"></p>
+    <p class="hint">快捷键：<b>1/2/3</b> 切作品 · <b>空格</b> 暂停 · <b>R</b> 重播 · <b>N</b> 换种子 · <b>S</b> 存图 · 画布内<b>滚轮</b>缩放（分形）</p>
+  </aside>
+</main>
+
+<!-- p5.js v1.11.3 已本地化到 vendor/，零 CDN 依赖，断网也能跑 -->
+<script src="vendor/p5.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "generative-art",
+  "version": "1.0.0",
+  "private": true,
+  "description": "生成艺术工坊：流场 / 粒子字 / 分形三个原创 sketch（p5.js 本地化 + 纯函数核心库 + Node 单测 + 无头浏览器像素级验证）",
+  "type": "module",
+  "scripts": {
+    "serve": "node tools/serve.mjs 4183",
+    "test": "node --test tools/core.test.mjs",
+    "verify": "node tools/verify.mjs"
+  },
+  "keywords": ["generative-art", "creative-coding", "p5js", "flow-field", "particle-text", "fractal"],
+  "license": "MIT"
+}
